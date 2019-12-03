@@ -1,0 +1,163 @@
+        <!Doctype html>
+        <html lang="zh-cn">
+        <head>
+        <meta charset="utf-8">
+        <title>基础练习</title>
+        <style>
+        body{
+            padding:0px;
+            margin:0px 300px;
+            text-align:center;
+
+        }
+        span{
+
+
+            margin-left:5px;
+            margin-right:-5px;
+            margin-top:-5px;
+            position:relative;
+            display: inline-block;
+            height:500px;
+            width:1000px;
+        }
+        div{
+
+            margin:5px;
+            height:100px;
+            width:1000px;
+            background:#666;
+        }
+
+        header>div{
+
+            height:50px;
+        }
+        nav>div{
+            height:20px;
+        }
+        nav+div+div{
+            height:500px;
+        }
+
+        span>.left{
+            margin-left:0px;
+            float: left;
+            background: red;
+            width:200px;
+            height:500px;
+        }
+            span>.center{
+            /* position:absolute;
+            left:50%;
+
+            transform:translate(-50%); */
+            /*  margin-left:-5px; */
+            /* margin-right:-5px; */
+            float: left;
+            width:calc(100% - 410px);
+            height:500px;
+            margin-left:0px;
+        }
+        span>.right{
+            margin:5px 0px;
+            float: right;
+            width:200px;
+            background: red;
+            height:500px;
+        }
+        header>div>ul{
+            margin:0px auto;
+            height:auto;
+            width:auto;
+            text-align:center;
+
+        }
+          header>div>ul::after{
+                content:"";
+                clear:both;
+                display: block;
+          }
+        header>div>ul>li{
+            color:red;
+            margin-left:40px;
+            position:relative;
+
+            left:calc(50% - 350px);
+            padding:0px;
+            font-size:20px;
+
+            line-height:45px;
+
+            width: 80px;
+            height:50px;
+            list-style-type:none;
+            float:left;
+            box-sizing:border-box;
+        }
+        header>div>ul>li:hover{
+            background:blue;
+            border:1px solid black;
+            border-bottom: none;
+            line-height:42px;
+
+        }
+        header>div>ul>li:hover .ul{
+            display: inline-block;
+            border:2px solid #ccc;
+            box-sizing:border-box;
+             box-sizing:border-box;
+        }
+        .ul{
+            margin-top:6px;
+            display: none;
+            margin-left:-40px;
+
+        }
+        .ul>li{
+            line-height:1.5;
+            text-align:center;
+            display: inline-block;
+             }
+          a{
+            text-decoration:none;
+             color:black;
+            }
+
+        </style>
+        </head>
+        <body>
+        <header>
+        <div>
+                <ul>
+                    <li><a href=""></a>hello
+                    <ul class="ul">
+                        <li><a href="">hello</a></li>
+                        <li><a href="">hello</a></li>
+                    </ul>
+
+
+                    </li>
+                    <li><a href=""></a>hello</li>
+                    <li><a href=""></a>hello</li>
+                    <li><a href=""></a>hello</li>
+                    <li><a href=""></a>hello</li>
+                </ul>
+        </div>
+        </header><!-- /header -->
+        <nav class="">
+        <div>导航栏</div>
+        </nav>
+        <div>焦点图</div>
+        <span class="leirou">
+                <div class="left">内容左部分</div>
+                <div class="center" >内容中间部分</div>
+                <div class="right"s>内容右部分</div>
+        </span>
+        <footer>
+        <div>页面底部
+
+        </div>
+        </footer>
+        </body>
+        </html>

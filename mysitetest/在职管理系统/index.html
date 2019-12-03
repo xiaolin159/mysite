@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+        <header id="header" class="">
+                <div class="table">
+                    <div class="head">
+                        <h1>员工信息表</h1>
+                        <span class="add" id="add">添加</span></div>
+                    <div class="hidden" id="hidden">
+                        <ul class="add_hidden">
+                             <li><p id="break_1">取消</p></li>
+                             <li><input id="name1" placeholder="姓名" required></li>
+                             <li><span id="male">男</span><span id="female">女</span></li>
+                             <li><input type="Number" id="age" placeholder="年龄" required="required"></li>
+                             <li><span id="ind">在职</span><span id="not_in">离职</span></li>
+                             <li><span id="button">录入信息</span></li>
+                         </ul>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li id="everyone">所有员工信息</li>
+                            <li id="femal_massage">女员工信息</li>
+                            <li id="main_massage">男员工信息</li>
+                            <li id="in_massage">在职员工信息</li>
+                            <li id="not_in_massage">离职员工信息</li>
+                        </ul>
+                        <div class="table_msg" id="table_msg">
+                            <ul>
+                                <li><input type="checkbox" id="checkeveryone"/></li>
+                                <li>姓名</li>
+                                <li>性别</li>
+                                <li>年龄</li>
+                                <li>状态</li>
+                                <li>操作</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot">
+                        <ul>
+                            <li id="sel_delete">删除选中项</li>
+                            <li id="sel_in">入职选中项</li>
+                            <li id="sel_not_in">离职选中项</li>
+                            <li id="del_everyone">显示删除人员</li>
+                        </ul>
+
+                    </div>
+                </div>
+        </header><!-- /header -->
+</body>
+<script src="js/script.js"></script>
+</html>
